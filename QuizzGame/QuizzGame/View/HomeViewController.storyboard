@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="QuizzGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quizz Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-aW-uZU">
+                                <rect key="frame" x="0.0" y="60" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your name to start the game." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePa-f4-PEi">
+                                <rect key="frame" x="82" y="379" width="250" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owE-z0-LfN">
+                                <rect key="frame" x="82" y="436" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8Pr-nk-SGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-cm-RC8">
+                                <rect key="frame" x="132" y="806" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.68555960888715139" blue="0.040030248123744436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cue-1d-Po4"/>
+                                    <constraint firstAttribute="width" constant="150" id="LAZ-jr-Apm"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7Xq-RF-9rG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XUF-cm-RC8" secondAttribute="bottom" constant="16" id="2iq-FP-pUN"/>
+                            <constraint firstItem="XUF-cm-RC8" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="BCH-GC-CEY"/>
+                            <constraint firstItem="owE-z0-LfN" firstAttribute="top" secondItem="ePa-f4-PEi" secondAttribute="bottom" constant="16" id="FZ5-q3-dBT"/>
+                            <constraint firstItem="owE-z0-LfN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="HHM-71-0vP"/>
+                            <constraint firstItem="ePa-f4-PEi" firstAttribute="centerX" secondItem="owE-z0-LfN" secondAttribute="centerX" id="NdL-Xf-2Au"/>
+                            <constraint firstItem="ePa-f4-PEi" firstAttribute="leading" secondItem="owE-z0-LfN" secondAttribute="leading" id="XN0-bN-mTG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bAi-aW-uZU" secondAttribute="trailing" id="cEl-Cg-I0S"/>
+                            <constraint firstItem="ePa-f4-PEi" firstAttribute="trailing" secondItem="owE-z0-LfN" secondAttribute="trailing" id="eYd-wM-Ehg"/>
+                            <constraint firstItem="bAi-aW-uZU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="rBk-lm-FLG"/>
+                            <constraint firstItem="owE-z0-LfN" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="t9K-UV-GCW"/>
+                            <constraint firstItem="bAi-aW-uZU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vaG-TZ-sS9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextfield" destination="owE-z0-LfN" id="mz5-aV-EeJ"/>
+                        <outlet property="startButton" destination="XUF-cm-RC8" id="PNR-nb-kpb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
