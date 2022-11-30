@@ -116,26 +116,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CN-G8-n1Z">
-                                <rect key="frame" x="16" y="83" width="102" height="48"/>
+                                <rect key="frame" x="16" y="83" width="101.5" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-8r-mEl">
-                                <rect key="frame" x="296" y="83" width="102" height="48"/>
+                                <rect key="frame" x="296.5" y="83" width="101.5" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwH-Do-ggl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwH-Do-ggl">
                                 <rect key="frame" x="48" y="163" width="318" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-V9-WFt">
-                                <rect key="frame" x="48" y="200" width="318" height="590"/>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OQP-3G-4lN">
+                                <rect key="frame" x="48" y="208" width="318" height="582"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KtC-e8-9bK" id="deb-8j-d4e"/>
+                                    <outlet property="delegate" destination="KtC-e8-9bK" id="YL0-bL-xJP"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-zs-EVq">
                                 <rect key="frame" x="132" y="806" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.68555960890000001" blue="0.04003024812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -149,6 +154,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="nextButtonTapped" destination="KtC-e8-9bK" eventType="touchUpInside" id="rWa-YB-9WR"/>
                                     <action selector="startButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bX6-99-Sc8"/>
                                 </connections>
                             </button>
@@ -157,26 +163,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Tqc-7L-2Eg" firstAttribute="leading" secondItem="5U5-Rn-BgW" secondAttribute="leading" id="31m-ib-oiA"/>
+                            <constraint firstItem="OQP-3G-4lN" firstAttribute="top" secondItem="DwH-Do-ggl" secondAttribute="bottom" constant="16" id="3Cf-lz-56M"/>
                             <constraint firstItem="3CN-G8-n1Z" firstAttribute="top" secondItem="Tqc-7L-2Eg" secondAttribute="bottom" constant="8" id="Auz-9X-ucC"/>
-                            <constraint firstItem="a5t-zs-EVq" firstAttribute="top" secondItem="xGa-V9-WFt" secondAttribute="bottom" constant="16" id="CrW-b3-RYg"/>
                             <constraint firstItem="a5t-zs-EVq" firstAttribute="centerX" secondItem="5U5-Rn-BgW" secondAttribute="centerX" id="KKQ-kS-oNl"/>
                             <constraint firstItem="5U5-Rn-BgW" firstAttribute="trailing" secondItem="DwH-Do-ggl" secondAttribute="trailing" constant="48" id="LbI-Pr-PIA"/>
-                            <constraint firstItem="xGa-V9-WFt" firstAttribute="trailing" secondItem="DwH-Do-ggl" secondAttribute="trailing" id="NcA-UQ-JLH"/>
                             <constraint firstItem="Tqc-7L-2Eg" firstAttribute="top" secondItem="5U5-Rn-BgW" secondAttribute="top" id="S6T-hO-PXf"/>
+                            <constraint firstItem="OQP-3G-4lN" firstAttribute="trailing" secondItem="DwH-Do-ggl" secondAttribute="trailing" id="Ufk-HQ-k9K"/>
                             <constraint firstItem="3CN-G8-n1Z" firstAttribute="leading" secondItem="Tqc-7L-2Eg" secondAttribute="leading" constant="16" id="bWl-9O-N13"/>
                             <constraint firstItem="Nir-8r-mEl" firstAttribute="top" secondItem="3CN-G8-n1Z" secondAttribute="top" id="bnq-2X-1J0"/>
-                            <constraint firstItem="xGa-V9-WFt" firstAttribute="top" secondItem="DwH-Do-ggl" secondAttribute="bottom" constant="8" id="dkL-1A-Hkn"/>
+                            <constraint firstItem="a5t-zs-EVq" firstAttribute="top" secondItem="OQP-3G-4lN" secondAttribute="bottom" constant="16" id="gMh-Ia-sCW"/>
                             <constraint firstItem="5U5-Rn-BgW" firstAttribute="trailing" secondItem="Nir-8r-mEl" secondAttribute="trailing" constant="16" id="gq1-Q1-EJc"/>
                             <constraint firstItem="DwH-Do-ggl" firstAttribute="top" secondItem="Nir-8r-mEl" secondAttribute="bottom" constant="32" id="ixa-ci-b6O"/>
+                            <constraint firstItem="OQP-3G-4lN" firstAttribute="leading" secondItem="DwH-Do-ggl" secondAttribute="leading" id="l1B-wE-Xez"/>
                             <constraint firstItem="5U5-Rn-BgW" firstAttribute="bottom" secondItem="a5t-zs-EVq" secondAttribute="bottom" constant="16" id="oZr-6T-Zlk"/>
-                            <constraint firstItem="xGa-V9-WFt" firstAttribute="leading" secondItem="DwH-Do-ggl" secondAttribute="leading" id="pFr-dC-tjC"/>
                             <constraint firstItem="DwH-Do-ggl" firstAttribute="leading" secondItem="5U5-Rn-BgW" secondAttribute="leading" constant="48" id="r9U-jm-CV0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nDn-bQ-ZcD"/>
                     <connections>
-                        <outlet property="answersStackView" destination="xGa-V9-WFt" id="TUl-9f-N30"/>
+                        <outlet property="answersTableView" destination="OQP-3G-4lN" id="QQk-yd-Rrf"/>
                         <outlet property="nameLabel" destination="3CN-G8-n1Z" id="OjY-x4-jd1"/>
+                        <outlet property="nextButton" destination="a5t-zs-EVq" id="dOb-h3-5NY"/>
+                        <outlet property="questionLabel" destination="DwH-Do-ggl" id="BQc-Gh-9w2"/>
                         <outlet property="timerLabel" destination="Nir-8r-mEl" id="Ojd-If-heW"/>
                     </connections>
                 </viewController>
