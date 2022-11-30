@@ -94,4 +94,11 @@ extension HomeViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         isNameValid()
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if isNameValid() {
+            startButtonTapped()
+        }
+        return false
+    }
 }
