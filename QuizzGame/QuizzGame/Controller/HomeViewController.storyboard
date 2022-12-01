@@ -167,15 +167,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkQ-Pr-UuD">
-                                        <rect key="frame" x="16" y="112" width="382" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkQ-Pr-UuD">
+                                        <rect key="frame" x="16" y="112" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="80Z-gr-5yu">
-                                        <rect key="frame" x="16" y="149" width="382" height="597"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-f0-D4J">
+                                        <rect key="frame" x="16" y="148.5" width="382" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="nD9-V1-0sg"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fud-Rd-qzK">
                                         <rect key="frame" x="132" y="762" width="150" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.68555960890000001" blue="0.04003024812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -197,16 +201,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="UkQ-Pr-UuD" firstAttribute="trailing" secondItem="iJu-WU-20e" secondAttribute="trailing" id="0uG-Fp-OkI"/>
-                                    <constraint firstAttribute="trailing" secondItem="80Z-gr-5yu" secondAttribute="trailing" constant="16" id="9ik-MB-Wkl"/>
-                                    <constraint firstItem="fud-Rd-qzK" firstAttribute="top" secondItem="80Z-gr-5yu" secondAttribute="bottom" constant="16" id="EEY-ka-w6n"/>
+                                    <constraint firstAttribute="trailing" secondItem="5bh-f0-D4J" secondAttribute="trailing" constant="16" id="A0p-nC-GsT"/>
                                     <constraint firstItem="UkQ-Pr-UuD" firstAttribute="top" secondItem="iJu-WU-20e" secondAttribute="bottom" constant="48" id="LV8-hf-9Dg"/>
                                     <constraint firstItem="UkQ-Pr-UuD" firstAttribute="leading" secondItem="iJu-WU-20e" secondAttribute="leading" id="LcY-ih-8jt"/>
+                                    <constraint firstItem="5bh-f0-D4J" firstAttribute="leading" secondItem="Ymp-AL-0iC" secondAttribute="leading" constant="16" id="Py9-UT-ijN"/>
                                     <constraint firstAttribute="trailing" secondItem="iJu-WU-20e" secondAttribute="trailing" constant="16" id="UJc-VN-auZ"/>
                                     <constraint firstItem="iJu-WU-20e" firstAttribute="leading" secondItem="Ymp-AL-0iC" secondAttribute="leading" constant="16" id="Usa-yV-qXY"/>
                                     <constraint firstAttribute="bottom" secondItem="fud-Rd-qzK" secondAttribute="bottom" constant="16" id="ZXD-A7-vLi"/>
                                     <constraint firstItem="iJu-WU-20e" firstAttribute="top" secondItem="Ymp-AL-0iC" secondAttribute="top" constant="16" id="aI9-Sa-tug"/>
-                                    <constraint firstItem="80Z-gr-5yu" firstAttribute="top" secondItem="UkQ-Pr-UuD" secondAttribute="bottom" constant="16" id="gg7-na-XIK"/>
-                                    <constraint firstItem="80Z-gr-5yu" firstAttribute="leading" secondItem="Ymp-AL-0iC" secondAttribute="leading" constant="16" id="tjX-0k-eCj"/>
+                                    <constraint firstItem="5bh-f0-D4J" firstAttribute="top" secondItem="UkQ-Pr-UuD" secondAttribute="bottom" constant="16" id="saF-eX-y2b"/>
                                     <constraint firstItem="fud-Rd-qzK" firstAttribute="centerX" secondItem="Ymp-AL-0iC" secondAttribute="centerX" id="vUm-Q2-o47"/>
                                 </constraints>
                             </view>
@@ -238,7 +241,7 @@
                     <navigationItem key="navigationItem" id="nDn-bQ-ZcD"/>
                     <connections>
                         <outlet property="answersTableView" destination="OQP-3G-4lN" id="QQk-yd-Rrf"/>
-                        <outlet property="congratulationsImage" destination="80Z-gr-5yu" id="qzt-Bj-9bu"/>
+                        <outlet property="congratulationsImageViewContainer" destination="5bh-f0-D4J" id="Mxe-vD-PAv"/>
                         <outlet property="congratulationsView" destination="Ymp-AL-0iC" id="GKH-m1-JQJ"/>
                         <outlet property="goHomeButton" destination="fud-Rd-qzK" id="PpF-Hj-vWl"/>
                         <outlet property="nameLabel" destination="3CN-G8-n1Z" id="OjY-x4-jd1"/>

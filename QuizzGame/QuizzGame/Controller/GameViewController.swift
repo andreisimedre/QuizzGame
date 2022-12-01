@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import JellyGif
 
 class GameViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
@@ -15,8 +16,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var answersTableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var congratulationsView: UIView!
-    @IBOutlet weak var scoreLabel: UIView!
-    @IBOutlet weak var congratulationsImage: UIImageView!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var congratulationsImageViewContainer: UIView!
     @IBOutlet weak var goHomeButton: UIButton!
     
     var game: Game!
@@ -57,6 +58,27 @@ class GameViewController: UIViewController {
         nextButton.isEnabled = false
         goHomeButton.setTitle("Go Home", for: .normal)
         goHomeButton.roundCorners()
+        
+        let gifImageView = JellyGifImageView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: congratulationsImageViewContainer.frame.size.width - 50, height: congratulationsImageViewContainer.frame.size.height)))
+        gifImageView.contentMode = .scaleAspectFit
+        
+        gifImageView.startGif(with: .name("congratulations"))
+        
+        let constraint = NSLayoutConstraint(item: gifImageView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+
+        congratulationsImageViewContainer.addSubview(gifImageView)
+        self.view.addConstraint(constraint)
+        congratulationsView.isHidden = true
+    }
+    
+    func showCongratulationsView() {
+        congratulationsView.isHidden = false
+        if game.correctAnswers > 0 {
+            scoreLabel.text = "Congratulations you have \(game.correctAnswers) correct \(game.correctAnswers == 1 ? "answer" : "answers") from a total of \(game.questions.count) questions. That is \(game.correctAnswerPercentage)% correct answers."
+        } else {
+            scoreLabel.text = "Unfortunatelly you missed all your answers. Better luck next time."
+            congratulationsImageViewContainer.isHidden = true
+        }
     }
     
     func getNextQestion() {
@@ -70,6 +92,7 @@ class GameViewController: UIViewController {
             game.resetBetweenQuestionTimer()
         } else {
             game.finishGame()
+            showCongratulationsView()
         }
     }
     

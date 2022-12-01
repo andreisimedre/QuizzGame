@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "JellyGif.h"
 
-FOUNDATION_EXPORT double SwiftGifOriginVersionNumber;
-FOUNDATION_EXPORT const unsigned char SwiftGifOriginVersionString[];
+FOUNDATION_EXPORT double JellyGifVersionNumber;
+FOUNDATION_EXPORT const unsigned char JellyGifVersionString[];
 

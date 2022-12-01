@@ -1,16 +1,16 @@
 PODS:
-  - SwiftGifOrigin (1.7.0)
+  - JellyGif (1.0.2)
 
 DEPENDENCIES:
-  - SwiftGifOrigin (~> 1.7.0)
+  - JellyGif
 
 SPEC REPOS:
   trunk:
-    - SwiftGifOrigin
+    - JellyGif
 
 SPEC CHECKSUMS:
-  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  JellyGif: 52b7569b7015f3b1ab2a6be30e4a81d47f974c97
 
-PODFILE CHECKSUM: c1183bdaf82d6b836a766de5821614bf4301407f
+PODFILE CHECKSUM: 7b8cea9e25bf10285d85b1d719b05ade63159c4e
 
 COCOAPODS: 1.11.3

@@ -32,7 +32,8 @@ class Game {
     }
     
     var finished = false
-    private var correctAnswers = 0
+    var correctAnswers = 0
+    var correctAnswerPercentage = 0.00
     
     var questionTimer: Timer?
     var questionTimerCounter = GameConstants.questionTimerCounter
@@ -60,6 +61,10 @@ class Game {
         return questions[currentQuestion]
     }
     
+    func calculateCorrectAnswerPercentage() {
+        correctAnswerPercentage = ((Double(correctAnswers) / Double(questions.count) * 100) * 100).rounded() / 100
+    }
+    
     func checkSelectedAnswer() -> Bool {
         if selectedAnswerIndex == -1 {
             return false
@@ -73,7 +78,7 @@ class Game {
     }
     
     func finishGame() {
-        
+        calculateCorrectAnswerPercentage()
     }
     
     func startQuestionTimer() {

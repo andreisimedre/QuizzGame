@@ -6,7 +6,7 @@ target 'QuizzGame' do
   use_frameworks!
 
   # Pods for QuizzGame
-  pod 'SwiftGifOrigin', '~> 1.7.0'
+  pod 'JellyGif'
   
   target 'QuizzGameTests' do
     inherit! :search_paths

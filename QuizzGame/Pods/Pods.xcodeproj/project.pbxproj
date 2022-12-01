@@ -7,102 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049822B5ECA33F8A024DA1698A819552 /* Pods-QuizzGame-QuizzGameUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C48C3628AD17F8C7F939B7160AECC1 /* Pods-QuizzGame-QuizzGameUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43BDEBE509F74818C5FD49AF45F08EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		569B17665B5EE084527B0681C151ED88 /* SwiftGifOrigin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C952E95A9E34841FF9C8B959A0F825 /* SwiftGifOrigin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5CF09EB128A862196776D1E5FB5961 /* Pods-QuizzGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B3DA5EB6C50971B0A1DA900958B990 /* Pods-QuizzGame-dummy.m */; };
-		6DC8165F75ED5DD9CEDEC9B06C66BDED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8F40B35CA5090F1DD5BA51433995195F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A40415D82BFEF9E8DC3BD98D7EE88983 /* Pods-QuizzGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2433293CC07E52BDB0ED80AF2CF97CD0 /* Pods-QuizzGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		078CB2603B9164D98C7DAB04801670CC /* Pods-QuizzGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B3DA5EB6C50971B0A1DA900958B990 /* Pods-QuizzGame-dummy.m */; };
+		2AC69F2B554177E71C1C375E6359F0D1 /* GifPixelSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4FEA8027AADC137C75C33828C5325 /* GifPixelSize.swift */; };
+		2C63D6512AE16C4568C3D75945333AAC /* GifAnimationQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B825A97429E1A24A97C11FF498B5E26 /* GifAnimationQuality.swift */; };
+		35D72057C218C3D5D2C90039A8282B3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		43BDEBE509F74818C5FD49AF45F08EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		623D5DEAD85BD5E03AFF6E90E331222F /* GifInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F994333D8A7632D35DD73E8FA0E27D /* GifInfo.swift */; };
+		65AEBC895D52C9255030717C85A6DD04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		66AFC27951D309550D3BAD5E7B5DB496 /* JellyGifAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBABF016747317DF94BF2ED4C8A0385 /* JellyGifAnimator.swift */; };
+		765E1243D601FF4BC66B21C0CF81F9AF /* JellyGifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C7085A9C5B50F7D60319F0AF1D6F /* JellyGifImageView.swift */; };
+		7960ACCAAB3491925D974D25DC57958B /* JellyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040642F42661A1C3FE39716A6EA13F5 /* JellyGif-dummy.m */; };
+		7A85404483FF45BDFE78ED1B42A1E2BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		883B9E26545B9AEB153DAB71E834117E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		9726869FF8EEB1EC87EE123DCC064DEB /* Pods-QuizzGame-QuizzGameUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C48C3628AD17F8C7F939B7160AECC1 /* Pods-QuizzGame-QuizzGameUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2374CA5F709084598818B12CA059014 /* CGImageSource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7112F7FCDE1737C5AC1A389869F6359 /* CGImageSource+Extension.swift */; };
 		B1DD0B7401E907E5179068AEFE4E3E48 /* Pods-QuizzGameTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BED3FE34786FB6F310A0927F443C873 /* Pods-QuizzGameTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0F9DB48C34ECF897DB5CA524485D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E083D55F69407F149B8310EA50A04828 /* Pods-QuizzGame-QuizzGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8028CB8B24BCB94184A3A5EBA02DEA4 /* Pods-QuizzGame-QuizzGameUITests-dummy.m */; };
-		E1A5F42A5A6044B7CF2651FBD31D27BF /* SwiftGifOrigin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA61E31BF7F8ADA0246F5D0E1FC9D8F1 /* SwiftGifOrigin-dummy.m */; };
-		E3CBCB75597E94B4E7CB8AA8EC4E55BF /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D306462FE282D1EE4B92599D55D08 /* UIImage+Gif.swift */; };
+		B5F749BD5E95CD7AE1119311608CDD93 /* JellyGifOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87006FD7FF0054A7BBADFAB1499F9274 /* JellyGifOperation.swift */; };
+		BE60A65B751B30BD89F3548D2AA54B39 /* JellyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF625C1707DCE24C0B9EA04DD529638 /* JellyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCBFDFD1492199FFBC990D74E8C7F36 /* JellyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F33AA4364D78517EECD8B276E4C05E47 /* JellyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3EB84898F82DB1944E4924663D34337 /* Pods-QuizzGame-QuizzGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8028CB8B24BCB94184A3A5EBA02DEA4 /* Pods-QuizzGame-QuizzGameUITests-dummy.m */; };
+		E6670683A6DAF82F61C1963543E0CF07 /* Pods-QuizzGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2433293CC07E52BDB0ED80AF2CF97CD0 /* Pods-QuizzGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F960F2CCFE6B9F41A3FC5F29C806EAD7 /* Pods-QuizzGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 259CDF1B02D7ADE99DA434C04C1E4A61 /* Pods-QuizzGameTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17E1E629FBE6C455A6CD48A487ABABC1 /* PBXContainerItemProxy */ = {
+		617E818FABE09EEA1C573C2B5788D004 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7F9119A842E66F127E010A97169E4F4;
-			remoteInfo = SwiftGifOrigin;
+			remoteGlobalIDString = E17F285B813E8450E29E674801E7A916;
+			remoteInfo = JellyGif;
 		};
-		35DA871D6D53815FA3EA3A4A6FEA52BE /* PBXContainerItemProxy */ = {
+		8B23D744BBF0FB1CC4FED6DF8555C093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17F285B813E8450E29E674801E7A916;
+			remoteInfo = JellyGif;
+		};
+		9168DDD09F69834C08EBF8AE8C3A9DC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C89DE9FD1AFFB982DD7B23564CC7B702;
 			remoteInfo = "Pods-QuizzGame";
 		};
-		7F1A4F0562C93B6D83DAD680BEB2A82F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7F9119A842E66F127E010A97169E4F4;
-			remoteInfo = SwiftGifOrigin;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		009A756A583C269C2CA6AB33FB5B8749 /* Pods-QuizzGame */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QuizzGame"; path = Pods_QuizzGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BF02C073C32CF51A8C3597C30565A09 /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
+		0B825A97429E1A24A97C11FF498B5E26 /* GifAnimationQuality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GifAnimationQuality.swift; path = JellyGif/Source/Models/GifAnimationQuality.swift; sourceTree = "<group>"; };
+		138FB3E44B33CB4C4FBE3CE6203E8A5E /* JellyGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JellyGif.debug.xcconfig; sourceTree = "<group>"; };
 		142C155A09BCCF2282972EADB13EBBAA /* Pods-QuizzGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzGame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		14C952E95A9E34841FF9C8B959A0F825 /* SwiftGifOrigin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-umbrella.h"; sourceTree = "<group>"; };
 		16E9B4443835618097B50340E14421AB /* Pods-QuizzGameTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuizzGameTests.modulemap"; sourceTree = "<group>"; };
 		173E5FF5783D5A0FCE223266083A0407 /* Pods-QuizzGame-QuizzGameUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QuizzGame-QuizzGameUITests"; path = Pods_QuizzGame_QuizzGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF625C1707DCE24C0B9EA04DD529638 /* JellyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JellyGif.h; path = JellyGif/JellyGif.h; sourceTree = "<group>"; };
 		2416E74FD8E69427E9ECF8CC4385748B /* Pods-QuizzGame-QuizzGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzGame-QuizzGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2433293CC07E52BDB0ED80AF2CF97CD0 /* Pods-QuizzGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuizzGame-umbrella.h"; sourceTree = "<group>"; };
 		259CDF1B02D7ADE99DA434C04C1E4A61 /* Pods-QuizzGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuizzGameTests-dummy.m"; sourceTree = "<group>"; };
 		2CDCA9E87C3CAC573F752B8BCC0AE049 /* Pods-QuizzGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		2CFD711BFCC8565CCCCA33050519538D /* Pods-QuizzGame-QuizzGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGame-QuizzGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3040642F42661A1C3FE39716A6EA13F5 /* JellyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JellyGif-dummy.m"; sourceTree = "<group>"; };
 		39B351D245ED760412F9DEAF09BDF1E4 /* Pods-QuizzGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuizzGame.modulemap"; sourceTree = "<group>"; };
 		3BED3FE34786FB6F310A0927F443C873 /* Pods-QuizzGameTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuizzGameTests-umbrella.h"; sourceTree = "<group>"; };
 		4E7A0AB3EDCE3C97E4027912C1979AFF /* Pods-QuizzGame-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGame-Info.plist"; sourceTree = "<group>"; };
 		5B368569942AB3180A71BEAE26608D45 /* Pods-QuizzGame-QuizzGameUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGame-QuizzGameUITests-Info.plist"; sourceTree = "<group>"; };
 		5E390236512716B535C5F740A4937481 /* Pods-QuizzGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGame-acknowledgements.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7457CDFC3F81956F48C6B32C816E6DC6 /* Pods-QuizzGame-QuizzGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGame-QuizzGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7497CA409265B588C8B6FE1E1D3964F6 /* Pods-QuizzGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7705D58DBA8BD3F169A83C1910A2553D /* Pods-QuizzGame-QuizzGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuizzGame-QuizzGameUITests-frameworks.sh"; sourceTree = "<group>"; };
 		773AAFD015E044308501289C9529BF92 /* Pods-QuizzGameTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QuizzGameTests"; path = Pods_QuizzGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C48C3628AD17F8C7F939B7160AECC1 /* Pods-QuizzGame-QuizzGameUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuizzGame-QuizzGameUITests-umbrella.h"; sourceTree = "<group>"; };
+		7D71B574C3BA9587CDC62FFF4E0D1AAA /* JellyGif */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JellyGif; path = JellyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBABF016747317DF94BF2ED4C8A0385 /* JellyGifAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JellyGifAnimator.swift; path = JellyGif/Source/JellyGifAnimator.swift; sourceTree = "<group>"; };
 		7EFAE90E0AF3CAF56D91909AE9D7DBD8 /* Pods-QuizzGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGame.debug.xcconfig"; sourceTree = "<group>"; };
+		87006FD7FF0054A7BBADFAB1499F9274 /* JellyGifOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JellyGifOperation.swift; path = JellyGif/Source/JellyGifOperation.swift; sourceTree = "<group>"; };
 		8BBA31974A5418FB171560E3B64BD813 /* Pods-QuizzGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuizzGame-frameworks.sh"; sourceTree = "<group>"; };
-		8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftGifOrigin; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD1C2B912CBA3E48B760B76D8A4B7CD /* JellyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JellyGif.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCFB41F980D7963A3C73884F29EC1A0 /* Pods-QuizzGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuizzGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AEFC5DB01E859F11EF525F80D0C0E347 /* SwiftGifOrigin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.debug.xcconfig; sourceTree = "<group>"; };
+		A50AB0AEBD37135F1BC4AC5A89A5F370 /* JellyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JellyGif-Info.plist"; sourceTree = "<group>"; };
+		B961EB87DD27AC2614C5039740D8BB5B /* JellyGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JellyGif.release.xcconfig; sourceTree = "<group>"; };
 		C1C0A3B72AF8F174B597292534D237DD /* Pods-QuizzGameTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuizzGameTests-Info.plist"; sourceTree = "<group>"; };
 		C9B3DA5EB6C50971B0A1DA900958B990 /* Pods-QuizzGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuizzGame-dummy.m"; sourceTree = "<group>"; };
-		CA61E31BF7F8ADA0246F5D0E1FC9D8F1 /* SwiftGifOrigin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftGifOrigin-dummy.m"; sourceTree = "<group>"; };
-		D6313236D02DF30ED0B20673A79C53C7 /* SwiftGifOrigin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftGifOrigin-Info.plist"; sourceTree = "<group>"; };
-		D86D306462FE282D1EE4B92599D55D08 /* UIImage+Gif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "SwiftGifCommon/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		CAB5C7085A9C5B50F7D60319F0AF1D6F /* JellyGifImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JellyGifImageView.swift; path = JellyGif/Source/Views/JellyGifImageView.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D7112F7FCDE1737C5AC1A389869F6359 /* CGImageSource+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImageSource+Extension.swift"; path = "JellyGif/Source/Extensions/CGImageSource+Extension.swift"; sourceTree = "<group>"; };
 		DFBB240801B94AC9235002C9C9026958 /* Pods-QuizzGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGame.release.xcconfig"; sourceTree = "<group>"; };
-		E17CC38E90305801EFB567432C7F0FF2 /* SwiftGifOrigin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.release.xcconfig; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED112D1BCC5147B4F48094BCC53EFAE9 /* Pods-QuizzGame-QuizzGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGame-QuizzGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EFA23A5FB5A9972696D24F5DBE0FE070 /* SwiftGifOrigin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-prefix.pch"; sourceTree = "<group>"; };
+		EEB87281FE88B7FBA1A19FC37B4B3AEE /* JellyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JellyGif-prefix.pch"; sourceTree = "<group>"; };
+		F2F994333D8A7632D35DD73E8FA0E27D /* GifInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GifInfo.swift; path = JellyGif/Source/Models/GifInfo.swift; sourceTree = "<group>"; };
+		F33AA4364D78517EECD8B276E4C05E47 /* JellyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JellyGif-umbrella.h"; sourceTree = "<group>"; };
 		F627603D43AFB4C96676D38CBA2B01DD /* Pods-QuizzGame-QuizzGameUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuizzGame-QuizzGameUITests.modulemap"; sourceTree = "<group>"; };
 		F678F2E1E067EFFE75955A5B32441DC9 /* Pods-QuizzGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuizzGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8028CB8B24BCB94184A3A5EBA02DEA4 /* Pods-QuizzGame-QuizzGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuizzGame-QuizzGameUITests-dummy.m"; sourceTree = "<group>"; };
+		FAC4FEA8027AADC137C75C33828C5325 /* GifPixelSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GifPixelSize.swift; path = JellyGif/Source/Models/GifPixelSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AC91F6762C1E3712A247FB4EBBB4B7A /* Frameworks */ = {
+		353E4F530D30F3255BB38FF97051B2B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0F9DB48C34ECF897DB5CA524485D45 /* Foundation.framework in Frameworks */,
+				35D72057C218C3D5D2C90039A8282B3D /* Foundation.framework in Frameworks */,
+				883B9E26545B9AEB153DAB71E834117E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E26BE6012661BFC2A75D40091EB59AB /* Frameworks */ = {
+		67C318B5C12CA53BC38628D60210B9A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC8165F75ED5DD9CEDEC9B06C66BDED /* Foundation.framework in Frameworks */,
+				65AEBC895D52C9255030717C85A6DD04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,23 +131,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1197E872B668591C8D1DD66474C9141 /* Frameworks */ = {
+		C7318140D90C83F5B2E66770C1B92397 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F40B35CA5090F1DD5BA51433995195F /* Foundation.framework in Frameworks */,
+				7A85404483FF45BDFE78ED1B42A1E2BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07A86A73E2AB55E07E87A09B1AA3DBAC /* Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7B6833862B9CFBB583B60D0707A8527 /* SwiftGifOrigin */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2462AD5CF820B1B69453C6CEEB724135 /* Targets Support Files */ = {
@@ -176,56 +193,58 @@
 			path = "Target Support Files/Pods-QuizzGame";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		3148BB7052FA44978757EA11BF8A36BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				7D71B574C3BA9587CDC62FFF4E0D1AAA /* JellyGif */,
+				009A756A583C269C2CA6AB33FB5B8749 /* Pods-QuizzGame */,
+				173E5FF5783D5A0FCE223266083A0407 /* Pods-QuizzGame-QuizzGameUITests */,
+				773AAFD015E044308501289C9529BF92 /* Pods-QuizzGameTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5BF992DABA220748EC56A7BB11C1A8B3 /* Support Files */ = {
+		9E39265403E447DB6B6E36E6D33F7EF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0BF02C073C32CF51A8C3597C30565A09 /* SwiftGifOrigin.modulemap */,
-				CA61E31BF7F8ADA0246F5D0E1FC9D8F1 /* SwiftGifOrigin-dummy.m */,
-				D6313236D02DF30ED0B20673A79C53C7 /* SwiftGifOrigin-Info.plist */,
-				EFA23A5FB5A9972696D24F5DBE0FE070 /* SwiftGifOrigin-prefix.pch */,
-				14C952E95A9E34841FF9C8B959A0F825 /* SwiftGifOrigin-umbrella.h */,
-				AEFC5DB01E859F11EF525F80D0C0E347 /* SwiftGifOrigin.debug.xcconfig */,
-				E17CC38E90305801EFB567432C7F0FF2 /* SwiftGifOrigin.release.xcconfig */,
+				ECF7854ECBBA9DD57A3DD6BFEFA872D9 /* JellyGif */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9311366B4C73AFA16B3B59F63344CF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AD1C2B912CBA3E48B760B76D8A4B7CD /* JellyGif.modulemap */,
+				3040642F42661A1C3FE39716A6EA13F5 /* JellyGif-dummy.m */,
+				A50AB0AEBD37135F1BC4AC5A89A5F370 /* JellyGif-Info.plist */,
+				EEB87281FE88B7FBA1A19FC37B4B3AEE /* JellyGif-prefix.pch */,
+				F33AA4364D78517EECD8B276E4C05E47 /* JellyGif-umbrella.h */,
+				138FB3E44B33CB4C4FBE3CE6203E8A5E /* JellyGif.debug.xcconfig */,
+				B961EB87DD27AC2614C5039740D8BB5B /* JellyGif.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftGifOrigin";
+			path = "../Target Support Files/JellyGif";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				07A86A73E2AB55E07E87A09B1AA3DBAC /* Pods */,
-				E7E4AE4897B8217159E952898680AA95 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9E39265403E447DB6B6E36E6D33F7EF2 /* Pods */,
+				3148BB7052FA44978757EA11BF8A36BB /* Products */,
 				2462AD5CF820B1B69453C6CEEB724135 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7B6833862B9CFBB583B60D0707A8527 /* SwiftGifOrigin */ = {
-			isa = PBXGroup;
-			children = (
-				D86D306462FE282D1EE4B92599D55D08 /* UIImage+Gif.swift */,
-				5BF992DABA220748EC56A7BB11C1A8B3 /* Support Files */,
-			);
-			name = SwiftGifOrigin;
-			path = SwiftGifOrigin;
 			sourceTree = "<group>";
 		};
 		E2E3811FBBD023B3ED47729D7FBBA168 /* Pods-QuizzGame-QuizzGameUITests */ = {
@@ -245,41 +264,48 @@
 			path = "Target Support Files/Pods-QuizzGame-QuizzGameUITests";
 			sourceTree = "<group>";
 		};
-		E7E4AE4897B8217159E952898680AA95 /* Products */ = {
+		ECF7854ECBBA9DD57A3DD6BFEFA872D9 /* JellyGif */ = {
 			isa = PBXGroup;
 			children = (
-				009A756A583C269C2CA6AB33FB5B8749 /* Pods-QuizzGame */,
-				173E5FF5783D5A0FCE223266083A0407 /* Pods-QuizzGame-QuizzGameUITests */,
-				773AAFD015E044308501289C9529BF92 /* Pods-QuizzGameTests */,
-				8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */,
+				D7112F7FCDE1737C5AC1A389869F6359 /* CGImageSource+Extension.swift */,
+				0B825A97429E1A24A97C11FF498B5E26 /* GifAnimationQuality.swift */,
+				F2F994333D8A7632D35DD73E8FA0E27D /* GifInfo.swift */,
+				FAC4FEA8027AADC137C75C33828C5325 /* GifPixelSize.swift */,
+				1EF625C1707DCE24C0B9EA04DD529638 /* JellyGif.h */,
+				7EBABF016747317DF94BF2ED4C8A0385 /* JellyGifAnimator.swift */,
+				CAB5C7085A9C5B50F7D60319F0AF1D6F /* JellyGifImageView.swift */,
+				87006FD7FF0054A7BBADFAB1499F9274 /* JellyGifOperation.swift */,
+				C9311366B4C73AFA16B3B59F63344CF4 /* Support Files */,
 			);
-			name = Products;
+			name = JellyGif;
+			path = JellyGif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3FD28F439A27D7E1C0A479B76BC5A50B /* Headers */ = {
+		12B938E5FB207568992CAE717F00BF4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40415D82BFEF9E8DC3BD98D7EE88983 /* Pods-QuizzGame-umbrella.h in Headers */,
+				BE60A65B751B30BD89F3548D2AA54B39 /* JellyGif.h in Headers */,
+				DFCBFDFD1492199FFBC990D74E8C7F36 /* JellyGif-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		729D6AE89E316EE164070C916D5238A6 /* Headers */ = {
+		2969BEF48C4E4B82AA4505E23411E117 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569B17665B5EE084527B0681C151ED88 /* SwiftGifOrigin-umbrella.h in Headers */,
+				E6670683A6DAF82F61C1963543E0CF07 /* Pods-QuizzGame-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACDE86EFC562BA689B5C6EA9E086992C /* Headers */ = {
+		7BFF181B69C9E1B993A439055FC5C4D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049822B5ECA33F8A024DA1698A819552 /* Pods-QuizzGame-QuizzGameUITests-umbrella.h in Headers */,
+				9726869FF8EEB1EC87EE123DCC064DEB /* Pods-QuizzGame-QuizzGameUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,63 +332,63 @@
 			buildRules = (
 			);
 			dependencies = (
-				94BEBD1CE9FD3D1679ADEC409961A2EB /* PBXTargetDependency */,
+				BA9AACF45E00E4E6C4F926C8DE5F24DC /* PBXTargetDependency */,
 			);
 			name = "Pods-QuizzGameTests";
 			productName = Pods_QuizzGameTests;
 			productReference = 773AAFD015E044308501289C9529BF92 /* Pods-QuizzGameTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7F9119A842E66F127E010A97169E4F4 /* SwiftGifOrigin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C95ED2684E193E89ED96D9EAC45CB7DB /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */;
-			buildPhases = (
-				729D6AE89E316EE164070C916D5238A6 /* Headers */,
-				814F7F84DEFEABCB8B9DFCD2F3C9086B /* Sources */,
-				0AC91F6762C1E3712A247FB4EBBB4B7A /* Frameworks */,
-				28D7A47D6A322BEA7B150B2B608F1C4C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftGifOrigin;
-			productName = SwiftGifOrigin;
-			productReference = 8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */;
-			productType = "com.apple.product-type.framework";
-		};
 		C89DE9FD1AFFB982DD7B23564CC7B702 /* Pods-QuizzGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAAEF3E757B8F344206FA7E65A62825B /* Build configuration list for PBXNativeTarget "Pods-QuizzGame" */;
+			buildConfigurationList = 21403F2BEE6383BE1769BEA97E1E21FD /* Build configuration list for PBXNativeTarget "Pods-QuizzGame" */;
 			buildPhases = (
-				3FD28F439A27D7E1C0A479B76BC5A50B /* Headers */,
-				C8F656E27204F74362226CF34BAD67C5 /* Sources */,
-				C1197E872B668591C8D1DD66474C9141 /* Frameworks */,
-				244C1AFB35FCC5874D3A9F4A534EBAC6 /* Resources */,
+				2969BEF48C4E4B82AA4505E23411E117 /* Headers */,
+				A3D442429CC4CDE190624E8DAED4AC44 /* Sources */,
+				C7318140D90C83F5B2E66770C1B92397 /* Frameworks */,
+				F3B6E071F1E383C928750E64E20559FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E3F306992A0A27DFB2686E6660E6F7E4 /* PBXTargetDependency */,
+				680FC3BFC2D33BAE5FE3ED261ED5F3FE /* PBXTargetDependency */,
 			);
 			name = "Pods-QuizzGame";
 			productName = Pods_QuizzGame;
 			productReference = 009A756A583C269C2CA6AB33FB5B8749 /* Pods-QuizzGame */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF10F54C7FF8DD5AC70C699BCE43EFBD /* Pods-QuizzGame-QuizzGameUITests */ = {
+		E17F285B813E8450E29E674801E7A916 /* JellyGif */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3503B3CAB6D7FA77C1E8FC276475FDB8 /* Build configuration list for PBXNativeTarget "Pods-QuizzGame-QuizzGameUITests" */;
+			buildConfigurationList = BED623BDFCE24E44D9365202D8A91CBE /* Build configuration list for PBXNativeTarget "JellyGif" */;
 			buildPhases = (
-				ACDE86EFC562BA689B5C6EA9E086992C /* Headers */,
-				8B942DB6198D4DEE4DB3C71FE572C818 /* Sources */,
-				4E26BE6012661BFC2A75D40091EB59AB /* Frameworks */,
-				D0C9EC0BFB73AE20D72DCC2FFF4617B1 /* Resources */,
+				12B938E5FB207568992CAE717F00BF4B /* Headers */,
+				46E1698EECA8C67026816594C626CA6C /* Sources */,
+				353E4F530D30F3255BB38FF97051B2B8 /* Frameworks */,
+				32E6723A30D68334DA8885482A21F8DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				78A0F5A91F233D085B8DDDBFC64BC117 /* PBXTargetDependency */,
+			);
+			name = JellyGif;
+			productName = JellyGif;
+			productReference = 7D71B574C3BA9587CDC62FFF4E0D1AAA /* JellyGif */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF10F54C7FF8DD5AC70C699BCE43EFBD /* Pods-QuizzGame-QuizzGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A2AD7E5EA4B244F3ECFF5E9D2F5632 /* Build configuration list for PBXNativeTarget "Pods-QuizzGame-QuizzGameUITests" */;
+			buildPhases = (
+				7BFF181B69C9E1B993A439055FC5C4D3 /* Headers */,
+				5C12553190590DE703DAE509F214B2C4 /* Sources */,
+				67C318B5C12CA53BC38628D60210B9A3 /* Frameworks */,
+				3CE849BBDFB70A0BEB4D0A1EE7FB21F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF590C3924394B62E0629E2221F3C48 /* PBXTargetDependency */,
 			);
 			name = "Pods-QuizzGame-QuizzGameUITests";
 			productName = Pods_QuizzGame_QuizzGameUITests;
@@ -387,27 +413,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E7E4AE4897B8217159E952898680AA95 /* Products */;
+			productRefGroup = 3148BB7052FA44978757EA11BF8A36BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E17F285B813E8450E29E674801E7A916 /* JellyGif */,
 				C89DE9FD1AFFB982DD7B23564CC7B702 /* Pods-QuizzGame */,
 				EF10F54C7FF8DD5AC70C699BCE43EFBD /* Pods-QuizzGame-QuizzGameUITests */,
 				58632B0CF42820D67AC22E23A8FEF830 /* Pods-QuizzGameTests */,
-				A7F9119A842E66F127E010A97169E4F4 /* SwiftGifOrigin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		244C1AFB35FCC5874D3A9F4A534EBAC6 /* Resources */ = {
+		32E6723A30D68334DA8885482A21F8DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28D7A47D6A322BEA7B150B2B608F1C4C /* Resources */ = {
+		3CE849BBDFB70A0BEB4D0A1EE7FB21F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,7 +447,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0C9EC0BFB73AE20D72DCC2FFF4617B1 /* Resources */ = {
+		F3B6E071F1E383C928750E64E20559FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,56 +465,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		814F7F84DEFEABCB8B9DFCD2F3C9086B /* Sources */ = {
+		46E1698EECA8C67026816594C626CA6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A5F42A5A6044B7CF2651FBD31D27BF /* SwiftGifOrigin-dummy.m in Sources */,
-				E3CBCB75597E94B4E7CB8AA8EC4E55BF /* UIImage+Gif.swift in Sources */,
+				A2374CA5F709084598818B12CA059014 /* CGImageSource+Extension.swift in Sources */,
+				2C63D6512AE16C4568C3D75945333AAC /* GifAnimationQuality.swift in Sources */,
+				623D5DEAD85BD5E03AFF6E90E331222F /* GifInfo.swift in Sources */,
+				2AC69F2B554177E71C1C375E6359F0D1 /* GifPixelSize.swift in Sources */,
+				7960ACCAAB3491925D974D25DC57958B /* JellyGif-dummy.m in Sources */,
+				66AFC27951D309550D3BAD5E7B5DB496 /* JellyGifAnimator.swift in Sources */,
+				765E1243D601FF4BC66B21C0CF81F9AF /* JellyGifImageView.swift in Sources */,
+				B5F749BD5E95CD7AE1119311608CDD93 /* JellyGifOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B942DB6198D4DEE4DB3C71FE572C818 /* Sources */ = {
+		5C12553190590DE703DAE509F214B2C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E083D55F69407F149B8310EA50A04828 /* Pods-QuizzGame-QuizzGameUITests-dummy.m in Sources */,
+				E3EB84898F82DB1944E4924663D34337 /* Pods-QuizzGame-QuizzGameUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8F656E27204F74362226CF34BAD67C5 /* Sources */ = {
+		A3D442429CC4CDE190624E8DAED4AC44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5CF09EB128A862196776D1E5FB5961 /* Pods-QuizzGame-dummy.m in Sources */,
+				078CB2603B9164D98C7DAB04801670CC /* Pods-QuizzGame-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		78A0F5A91F233D085B8DDDBFC64BC117 /* PBXTargetDependency */ = {
+		680FC3BFC2D33BAE5FE3ED261ED5F3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftGifOrigin;
-			target = A7F9119A842E66F127E010A97169E4F4 /* SwiftGifOrigin */;
-			targetProxy = 17E1E629FBE6C455A6CD48A487ABABC1 /* PBXContainerItemProxy */;
+			name = JellyGif;
+			target = E17F285B813E8450E29E674801E7A916 /* JellyGif */;
+			targetProxy = 617E818FABE09EEA1C573C2B5788D004 /* PBXContainerItemProxy */;
 		};
-		94BEBD1CE9FD3D1679ADEC409961A2EB /* PBXTargetDependency */ = {
+		AAF590C3924394B62E0629E2221F3C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JellyGif;
+			target = E17F285B813E8450E29E674801E7A916 /* JellyGif */;
+			targetProxy = 8B23D744BBF0FB1CC4FED6DF8555C093 /* PBXContainerItemProxy */;
+		};
+		BA9AACF45E00E4E6C4F926C8DE5F24DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-QuizzGame";
 			target = C89DE9FD1AFFB982DD7B23564CC7B702 /* Pods-QuizzGame */;
-			targetProxy = 35DA871D6D53815FA3EA3A4A6FEA52BE /* PBXContainerItemProxy */;
-		};
-		E3F306992A0A27DFB2686E6660E6F7E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftGifOrigin;
-			target = A7F9119A842E66F127E010A97169E4F4 /* SwiftGifOrigin */;
-			targetProxy = 7F1A4F0562C93B6D83DAD680BEB2A82F /* PBXContainerItemProxy */;
+			targetProxy = 9168DDD09F69834C08EBF8AE8C3A9DC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02EAB052C76BA27B624E98D4EC763915 /* Debug */ = {
+		04CBD9C0A82C40D7CB742C3BA356F6D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EFAE90E0AF3CAF56D91909AE9D7DBD8 /* Pods-QuizzGame.debug.xcconfig */;
 			buildSettings = {
@@ -591,6 +623,81 @@
 			};
 			name = Debug;
 		};
+		18001541B9F716BD5F00DEFD80632FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED112D1BCC5147B4F48094BCC53EFAE9 /* Pods-QuizzGame-QuizzGameUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18F29E754DD47D2B1FD8E894BCD77BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFD711BFCC8565CCCCA33050519538D /* Pods-QuizzGame-QuizzGameUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1E51005ACD7B1A29548E9E00E48F4054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F678F2E1E067EFFE75955A5B32441DC9 /* Pods-QuizzGameTests.debug.xcconfig */;
@@ -690,10 +797,11 @@
 			};
 			name = Release;
 		};
-		6944F7A26B91D24A0C6EA8AF6933AA96 /* Debug */ = {
+		7F9140FAB89A8C1A2F80D2193FF86A4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEFC5DB01E859F11EF525F80D0C0E347 /* SwiftGifOrigin.debug.xcconfig */;
+			baseConfigurationReference = B961EB87DD27AC2614C5039740D8BB5B /* JellyGif.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -702,18 +810,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JellyGif/JellyGif-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JellyGif/JellyGif-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
-				PRODUCT_MODULE_NAME = SwiftGifOrigin;
-				PRODUCT_NAME = SwiftGifOrigin;
+				MODULEMAP_FILE = "Target Support Files/JellyGif/JellyGif.modulemap";
+				PRODUCT_MODULE_NAME = JellyGif;
+				PRODUCT_NAME = JellyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8051ACEB361F07CC6DDB6002609535F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138FB3E44B33CB4C4FBE3CE6203E8A5E /* JellyGif.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JellyGif/JellyGif-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JellyGif/JellyGif-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JellyGif/JellyGif.modulemap";
+				PRODUCT_MODULE_NAME = JellyGif;
+				PRODUCT_NAME = JellyGif;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -724,9 +868,9 @@
 			};
 			name = Debug;
 		};
-		7621FC401E78DE751424001CE1FF9605 /* Release */ = {
+		CA449E91FF681AF6D46AA1EBF9BCAFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CFD711BFCC8565CCCCA33050519538D /* Pods-QuizzGame-QuizzGameUITests.release.xcconfig */;
+			baseConfigurationReference = DFBB240801B94AC9235002C9C9026958 /* Pods-QuizzGame.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -738,7 +882,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame/Pods-QuizzGame-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -747,7 +891,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame/Pods-QuizzGame.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -761,43 +905,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		CA885F4F02E412BC51461EC7FA7BE21C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED112D1BCC5147B4F48094BCC53EFAE9 /* Pods-QuizzGame-QuizzGameUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D4F2A47BF919A6D7D589033E7B156C25 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -837,87 +944,23 @@
 			};
 			name = Release;
 		};
-		F311006D503A998460BF57198CF6C3E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFBB240801B94AC9235002C9C9026958 /* Pods-QuizzGame.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuizzGame/Pods-QuizzGame-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuizzGame/Pods-QuizzGame.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F5460408A0DD5564F12D70EA1B957971 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17CC38E90305801EFB567432C7F0FF2 /* SwiftGifOrigin.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
-				PRODUCT_MODULE_NAME = SwiftGifOrigin;
-				PRODUCT_NAME = SwiftGifOrigin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3503B3CAB6D7FA77C1E8FC276475FDB8 /* Build configuration list for PBXNativeTarget "Pods-QuizzGame-QuizzGameUITests" */ = {
+		21403F2BEE6383BE1769BEA97E1E21FD /* Build configuration list for PBXNativeTarget "Pods-QuizzGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA885F4F02E412BC51461EC7FA7BE21C /* Debug */,
-				7621FC401E78DE751424001CE1FF9605 /* Release */,
+				04CBD9C0A82C40D7CB742C3BA356F6D8 /* Debug */,
+				CA449E91FF681AF6D46AA1EBF9BCAFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A2AD7E5EA4B244F3ECFF5E9D2F5632 /* Build configuration list for PBXNativeTarget "Pods-QuizzGame-QuizzGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18001541B9F716BD5F00DEFD80632FE2 /* Debug */,
+				18F29E754DD47D2B1FD8E894BCD77BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -940,20 +983,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAAEF3E757B8F344206FA7E65A62825B /* Build configuration list for PBXNativeTarget "Pods-QuizzGame" */ = {
+		BED623BDFCE24E44D9365202D8A91CBE /* Build configuration list for PBXNativeTarget "JellyGif" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02EAB052C76BA27B624E98D4EC763915 /* Debug */,
-				F311006D503A998460BF57198CF6C3E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C95ED2684E193E89ED96D9EAC45CB7DB /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6944F7A26B91D24A0C6EA8AF6933AA96 /* Debug */,
-				F5460408A0DD5564F12D70EA1B957971 /* Release */,
+				8051ACEB361F07CC6DDB6002609535F0 /* Debug */,
+				7F9140FAB89A8C1A2F80D2193FF86A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

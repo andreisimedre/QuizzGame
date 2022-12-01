@@ -20,6 +20,14 @@ class HomeViewController: UIViewController {
         initUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        nameTextfield.text = ""
+        minimumLettersNumberLabel.isHidden = true
+        maximumLettersNumberLabel.isHidden = truere
+    }
+    
     func initUI() {
         nameTextfield.placeholder = "Name"
         nameTextfield.autocorrectionType = .no
@@ -88,7 +96,6 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         isNameValid()
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
