@@ -23,22 +23,33 @@
                             <constraint firstAttribute="height" constant="25" id="S5y-kW-0L7"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-RN-HWE">
-                        <rect key="frame" x="41" y="55" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-RN-HWE">
+                        <rect key="frame" x="41" y="8" width="433" height="115"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQM-C5-xH7">
+                        <rect key="frame" x="0.0" y="0.0" width="474" height="131"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="uFu-RN-HWE" firstAttribute="centerY" secondItem="ORb-zy-sYc" secondAttribute="centerY" id="OMD-T6-cgs"/>
+                    <constraint firstItem="NQM-C5-xH7" firstAttribute="top" secondItem="ORb-zy-sYc" secondAttribute="top" id="D8M-Oh-Cxv"/>
+                    <constraint firstAttribute="trailing" secondItem="NQM-C5-xH7" secondAttribute="trailing" id="Non-93-ZME"/>
+                    <constraint firstItem="NQM-C5-xH7" firstAttribute="leading" secondItem="ORb-zy-sYc" secondAttribute="leading" id="OSh-HG-Pni"/>
                     <constraint firstItem="DJp-Pu-vfx" firstAttribute="leading" secondItem="ORb-zy-sYc" secondAttribute="leading" id="WMz-mV-erp"/>
                     <constraint firstItem="uFu-RN-HWE" firstAttribute="leading" secondItem="DJp-Pu-vfx" secondAttribute="trailing" constant="16" id="WvB-eS-4eQ"/>
                     <constraint firstItem="DJp-Pu-vfx" firstAttribute="centerY" secondItem="ORb-zy-sYc" secondAttribute="centerY" id="cGv-ZI-HO3"/>
+                    <constraint firstAttribute="bottom" secondItem="NQM-C5-xH7" secondAttribute="bottom" id="hsw-Y6-I9u"/>
+                    <constraint firstAttribute="trailing" secondItem="uFu-RN-HWE" secondAttribute="trailing" id="i9t-NX-gpv"/>
+                    <constraint firstItem="uFu-RN-HWE" firstAttribute="top" secondItem="ORb-zy-sYc" secondAttribute="top" constant="8" id="llz-8S-feB"/>
+                    <constraint firstAttribute="bottom" secondItem="uFu-RN-HWE" secondAttribute="bottom" constant="8" id="nJx-3G-ktE"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="buttonTextLabel" destination="uFu-RN-HWE" id="nda-ny-xdE"/>
+                <outlet property="overlay" destination="NQM-C5-xH7" id="qih-bS-Z5n"/>
                 <outlet property="radioImage" destination="DJp-Pu-vfx" id="IOh-xx-QOR"/>
             </connections>
             <point key="canvasLocation" x="181.15942028985509" y="141.62946428571428"/>

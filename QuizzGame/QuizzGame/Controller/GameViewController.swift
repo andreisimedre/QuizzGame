@@ -14,6 +14,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answersTableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var congratulationsView: UIView!
+    @IBOutlet weak var scoreLabel: UIView!
+    @IBOutlet weak var congratulationsImage: UIImageView!
+    @IBOutlet weak var goHomeButton: UIButton!
     
     var game: Game!
     var previouslySelectedCell: RadioButtonCell?
@@ -31,16 +35,55 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped() {
-        
+        game.resetQuestionTimer()
+        game.resetBetweenQuestionTimer()
+        game.startBetweenQuestionsTimer()
+        highlightCorrectAnswer()
+        highlightWrongAnswer()
+        nextButton.setTitle(String(game.betweenQuestionsTimerCounter), for: .normal)
+        nextButton.isEnabled = false
     }
     
     func initUI() {
         nameLabel.text = game.playerName
         answersTableView.delegate = self
         answersTableView.register(UINib(nibName: "RadioButtonCell", bundle: nil), forCellReuseIdentifier: "RadioButtonCell")
+        answersTableView.rowHeight = UITableView.automaticDimension
+        answersTableView.estimatedRowHeight = 200
         questionLabel.text = game.getCurrentQuestionTitle()
         timerLabel.text = String(game.questionTimerCounter)
         nextButton.setTitle("Next", for: .normal)
+        nextButton.roundCorners()
+        nextButton.isEnabled = false
+        goHomeButton.setTitle("Go Home", for: .normal)
+        goHomeButton.roundCorners()
+    }
+    
+    func getNextQestion() {
+        if !game.finished {
+            nextButton.setTitle("Next", for: .normal)
+            game.selectedAnswerIndex = -1
+            questionLabel.text = game.getCurrentQuestionTitle()
+            answersTableView.reloadData()
+            game.resetQuestionTimer()
+            game.startQuestionTimer()
+            game.resetBetweenQuestionTimer()
+        } else {
+            game.finishGame()
+        }
+    }
+    
+    func highlightCorrectAnswer() {
+        guard let cell = answersTableView.cellForRow(at: IndexPath(row: game.getCurrentQuestion().correctIndex, section: 0)) as? RadioButtonCell else { return }
+        
+        cell.overlay.backgroundColor = .green
+    }
+    
+    func highlightWrongAnswer() {
+        guard !game.checkSelectedAnswer() else { return }
+        guard let cell = answersTableView.cellForRow(at: IndexPath(row: game.selectedAnswerIndex, section: 0)) as? RadioButtonCell else { return }
+        
+        cell.overlay.backgroundColor = .red
     }
 }
 
@@ -53,7 +96,6 @@ extension GameViewController: UITableViewDelegate {
         previouslySelectedCell?.didSelect = false
         previouslySelectedCell = cell
         game.selectedAnswerIndex = indexPath.row
-        
     }
 }
 
@@ -70,6 +112,8 @@ extension GameViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RadioButtonCell") as? RadioButtonCell else { return UITableViewCell() }
         
         cell.buttonTextLabel.text = game.getCurrentAnswersSet()[indexPath.row]
+        cell.setNeedsLayout()
+        cell.layoutIfNeeded()
         cell.selectionStyle = .none
         
         return cell
@@ -77,11 +121,29 @@ extension GameViewController: UITableViewDataSource {
 }
 
 extension GameViewController: GameDelegate {
-    func questionTimerDidFinish() {
-        timerLabel.text = String(game.questionTimerCounter)
+    func selectedAnswerDidChanged() {
+        nextButton.isEnabled = !(game.selectedAnswerIndex == -1)
     }
     
-    func updateQuestionTimer() {
+    func betweenQuestionsTimerCounterDidFinish() {
+        timerLabel.text = String(game.questionTimerCounter)
+        getNextQestion()
+        previouslySelectedCell = nil
+    }
+    
+    func betweenQuestionsTimerCounterDidChanged() {
+        nextButton.setTitle(String(game.betweenQuestionsTimerCounter), for: .normal)
+    }
+    
+    func questionTimerDidFinish() {
+        timerLabel.text = String(game.questionTimerCounter)
+        nextButton.setTitle(String(game.betweenQuestionsTimerCounter), for: .normal)
+        highlightCorrectAnswer()
+        highlightWrongAnswer()
+        nextButton.isEnabled = false
+    }
+    
+    func questionTimerDidChanged() {
         timerLabel.text = String(game.questionTimerCounter)
     }
 }

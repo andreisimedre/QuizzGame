@@ -17,6 +17,7 @@
 		F95644812937A5F500EC0BB5 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = F956447C29379CCB00EC0BB5 /* Questions.json */; };
 		F95644862937C82D00EC0BB5 /* RadioButtonCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95644852937C82D00EC0BB5 /* RadioButtonCelll.swift */; };
 		F95644882937C8AF00EC0BB5 /* RadioButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95644872937C8AF00EC0BB5 /* RadioButtonCell.xib */; };
+		F956448C29390B0400EC0BB5 /* congratulations.gif in Resources */ = {isa = PBXBuildFile; fileRef = F956448B29390B0400EC0BB5 /* congratulations.gif */; };
 		F999BCBD29376DD500D32F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999BCBC29376DD500D32F73 /* AppDelegate.swift */; };
 		F999BCBF29376DD500D32F73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999BCBE29376DD500D32F73 /* SceneDelegate.swift */; };
 		F999BCC629376DD700D32F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F999BCC529376DD700D32F73 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		F956447F29379EC700EC0BB5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F95644852937C82D00EC0BB5 /* RadioButtonCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCelll.swift; sourceTree = "<group>"; };
 		F95644872937C8AF00EC0BB5 /* RadioButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonCell.xib; sourceTree = "<group>"; };
+		F956448B29390B0400EC0BB5 /* congratulations.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = congratulations.gif; sourceTree = "<group>"; };
 		F999BCB929376DD500D32F73 /* QuizzGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizzGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F999BCBC29376DD500D32F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F999BCBE29376DD500D32F73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F999BCC529376DD700D32F73 /* Assets.xcassets */,
+				F956448B29390B0400EC0BB5 /* congratulations.gif */,
 				F999BCBC29376DD500D32F73 /* AppDelegate.swift */,
 				F999BCBE29376DD500D32F73 /* SceneDelegate.swift */,
 				F999BCC729376DD700D32F73 /* LaunchScreen.storyboard */,
@@ -222,6 +225,7 @@
 				F999BCB529376DD500D32F73 /* Sources */,
 				F999BCB629376DD500D32F73 /* Frameworks */,
 				F999BCB729376DD500D32F73 /* Resources */,
+				8527C5FC29D35DD963FA0B7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +263,7 @@
 				F999BCD529376DD800D32F73 /* Sources */,
 				F999BCD629376DD800D32F73 /* Frameworks */,
 				F999BCD729376DD800D32F73 /* Resources */,
+				19A942759C1848B1769DF196 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,6 +327,7 @@
 				F999BCC929376DD700D32F73 /* LaunchScreen.storyboard in Resources */,
 				F999BCC629376DD700D32F73 /* Assets.xcassets in Resources */,
 				F999BCF429376F5C00D32F73 /* HomeViewController.storyboard in Resources */,
+				F956448C29390B0400EC0BB5 /* congratulations.gif in Resources */,
 				F95644882937C8AF00EC0BB5 /* RadioButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +349,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19A942759C1848B1769DF196 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizzGame-QuizzGameUITests/Pods-QuizzGame-QuizzGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8527C5FC29D35DD963FA0B7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzGame/Pods-QuizzGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzGame/Pods-QuizzGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizzGame/Pods-QuizzGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88764E0F7FF6686B00B6A298 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

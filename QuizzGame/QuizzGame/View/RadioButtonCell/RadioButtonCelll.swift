@@ -11,6 +11,14 @@ import UIKit
 class RadioButtonCell: UITableViewCell {
     @IBOutlet weak var radioImage: UIImageView!
     @IBOutlet weak var buttonTextLabel: UILabel!
+    @IBOutlet weak var overlay: UIView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        overlay.backgroundColor = .clear
+        didSelect = false
+    }
     
     var didSelect: Bool = false {
         didSet {
