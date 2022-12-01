@@ -137,6 +137,7 @@ extension GameViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RadioButtonCell") as? RadioButtonCell else { return UITableViewCell() }
         
         cell.buttonTextLabel.text = game.getCurrentAnswersSet()[indexPath.row]
+        cell.overlay.roundCorners()
         cell.setNeedsLayout()
         cell.layoutIfNeeded()
         cell.selectionStyle = .none
