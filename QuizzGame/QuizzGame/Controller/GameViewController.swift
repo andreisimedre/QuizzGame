@@ -21,6 +21,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        game.delegate = self
+        
         initUI()
     }
     
@@ -37,6 +39,7 @@ class GameViewController: UIViewController {
         answersTableView.delegate = self
         answersTableView.register(UINib(nibName: "RadioButtonCell", bundle: nil), forCellReuseIdentifier: "RadioButtonCell")
         questionLabel.text = game.getCurrentQuestionTitle()
+        timerLabel.text = String(game.questionTimerCounter)
         nextButton.setTitle("Next", for: .normal)
     }
 }
@@ -70,5 +73,15 @@ extension GameViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         
         return cell
+    }
+}
+
+extension GameViewController: GameDelegate {
+    func questionTimerDidFinish() {
+        timerLabel.text = String(game.questionTimerCounter)
+    }
+    
+    func updateQuestionTimer() {
+        timerLabel.text = String(game.questionTimerCounter)
     }
 }
