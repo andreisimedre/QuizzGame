@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         
         nameTextfield.text = ""
         minimumLettersNumberLabel.isHidden = true
-        maximumLettersNumberLabel.isHidden = truere
+        maximumLettersNumberLabel.isHidden = true
     }
     
     func initUI() {

@@ -43,6 +43,7 @@ class GameViewController: UIViewController {
         highlightWrongAnswer()
         nextButton.setTitle(String(game.betweenQuestionsTimerCounter), for: .normal)
         nextButton.isEnabled = false
+        answersTableView.allowsSelection = false
     }
     
     func initUI() {
@@ -90,6 +91,7 @@ class GameViewController: UIViewController {
             game.resetQuestionTimer()
             game.startQuestionTimer()
             game.resetBetweenQuestionTimer()
+            answersTableView.allowsSelection = true
         } else {
             game.finishGame()
             showCongratulationsView()
@@ -164,6 +166,7 @@ extension GameViewController: GameDelegate {
         highlightCorrectAnswer()
         highlightWrongAnswer()
         nextButton.isEnabled = false
+        answersTableView.allowsSelection = false
     }
     
     func questionTimerDidChanged() {
