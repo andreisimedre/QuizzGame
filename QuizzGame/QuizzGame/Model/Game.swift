@@ -16,7 +16,7 @@ protocol GameDelegate: AnyObject {
 }
 
 struct GameConstants {
-    static let questionTimerCounter = 10
+    static let questionTimerCounter = 45
     static let betweenQuestionsTimerCounter = 3
 }
 

@@ -92,6 +92,7 @@ class GameViewController: UIViewController {
             game.startQuestionTimer()
             game.resetBetweenQuestionTimer()
             answersTableView.allowsSelection = true
+            timerLabel.textColor = .black
         } else {
             game.finishGame()
             showCongratulationsView()
@@ -171,6 +172,7 @@ extension GameViewController: GameDelegate {
     }
     
     func questionTimerDidChanged() {
+        timerLabel.textColor = game.questionTimerCounter <= 10 ? .red : .black
         timerLabel.text = String(game.questionTimerCounter)
     }
 }
